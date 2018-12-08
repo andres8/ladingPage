@@ -30,21 +30,91 @@ ul.topnav li.right {
   float: right;
 }
 
+nav ul li.nav-link {
+  display: block;
+  padding: 0;
+}
+
 .responsive-image {
   width: 100%;
-  max-width: 350px;
+  max-width: 290px;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.subtittle {
+  margin: 30px 0 50px;
+}
+
+.subtittle h2 {
   margin-left: 20px;
-  margin-top: 7px;
+  margin-right: 20px;
+}
+
+#email {
+  margin: 10px 0 20px;
+  width: 250px;
+}
+
+#submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(247, 203, 9);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 40px;
+  grid-column-gap: 30px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.grid .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid div i {
+  vertical-align: middle;
+  color: rgb(247, 203, 9);
+  font-size: 2rem;
+}
+
+.grid div p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.grid div h3 {
+  margin: 0;
+}
+
+#howitworks {
+  text-align: center;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 600px) {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
+    text-align: center;
+  }
+  ul.topnav li img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
