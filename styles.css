@@ -1,13 +1,19 @@
 body {
   margin: 0;
 }
-
+#header {
+  top: 0;
+  position: fixed;
+}
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #e6e2e2;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 ul.topnav li {
@@ -30,7 +36,7 @@ ul.topnav li.right {
   float: right;
 }
 
-nav ul li.nav-link {
+nav ul li.nav-linkk {
   display: block;
   padding: 0;
 }
@@ -52,7 +58,7 @@ nav ul li.nav-link {
 }
 
 .subtittle {
-  margin: 30px 0 50px;
+  margin: 70px 0 50px;
 }
 
 .subtittle h2 {
@@ -107,6 +113,21 @@ nav ul li.nav-link {
   margin-top: 40px;
 }
 
+.grid-pricing {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+.pricing {
+  width: 80%;
+  height: 300px;
+  border-color: black;
+  text-align: center;
+  border-style: solid;
+  margin: 30px auto 30px auto;
+}
+
 @media screen and (max-width: 600px) {
   ul.topnav li.right,
   ul.topnav li {
@@ -116,5 +137,15 @@ nav ul li.nav-link {
   ul.topnav li img {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid-pricing {
+    grid-template-columns: auto;
+  }
+
+  .pricing {
+    width: 40%;
   }
 }
